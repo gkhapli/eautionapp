@@ -1,4 +1,4 @@
-package com.eauctionapp.seller.dto;
+package com.eauctionapp.common.dto;
 
 import lombok.*;
 
