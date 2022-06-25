@@ -1,0 +1,15 @@
+#Name of the application
+spring:
+  application:
+    name: eureka-server
+# Configure this Discovery Server
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+
+# HTTP (Tomcat) port
+server:
+  port: 8761

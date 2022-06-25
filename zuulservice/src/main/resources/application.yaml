@@ -1,0 +1,39 @@
+#Name of the application
+spring:
+  application:
+    name: zuulService
+
+#Eureka server url for registering
+#This is eureka client
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+#register url to server
+
+instance:
+  hostname: localhost
+
+server:
+  port: 8989
+  
+zuul:
+  prefix: /e-auction/api/v1
+  routes:
+    sellerService:
+      path: /sellerService/**
+      service-id: SELLERSERVICE
+    buyerService:
+      path: /buyerService/**
+      service-id: BUYERSERVICE
+    authenticationService:
+      path: /authenticationService/**
+      service-id: AUTHENTICATIONSERVICE
+      sensitiveHeaders: Cookie,Set-Cookie
+     
+     
+      
