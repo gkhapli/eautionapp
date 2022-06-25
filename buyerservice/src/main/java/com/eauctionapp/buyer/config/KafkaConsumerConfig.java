@@ -1,6 +1,6 @@
 package com.eauctionapp.buyer.config;
 
-import com.eauctionapp.buyer.event.ProductEvent;
+import com.eauctionapp.common.event.ProductEvent;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.kafka.clients.consumer.ConsumerConfig;
 import org.apache.kafka.common.serialization.StringDeserializer;
@@ -33,7 +33,7 @@ public class KafkaConsumerConfig {
         properties.put(ConsumerConfig.GROUP_ID_CONFIG, groupId);
         properties.put(ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class);
         properties.put(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG, JsonDeserializer.class);
-        properties.put(JsonDeserializer.TRUSTED_PACKAGES,"com.auction.event");
+        properties.put(JsonDeserializer.TRUSTED_PACKAGES,"*");
         return new DefaultKafkaConsumerFactory<>(properties);
     }
 

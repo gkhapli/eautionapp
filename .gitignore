@@ -1,0 +1,13 @@
+.idea/
+authenticationservice/authenticationservice.iml
+authenticationservice/target/
+buyerservice/buyerservice.iml
+buyerservice/target/
+common/common.iml
+common/target/
+eurekadiscovery/eurekadiscovery.iml
+eurekadiscovery/target/
+sellerservice/sellerservice.iml
+sellerservice/target/
+zuulservice/target/
+zuulservice/zuulservice.iml

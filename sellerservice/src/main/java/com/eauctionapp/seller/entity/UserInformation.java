@@ -1,6 +1,6 @@
 package com.eauctionapp.seller.entity;
 
-import com.eauctionapp.seller.dto.UserType;
+import com.eauctionapp.common.dto.UserType;
 import lombok.*;
 
 import javax.persistence.*;

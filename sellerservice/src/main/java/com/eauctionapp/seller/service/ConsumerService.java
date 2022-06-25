@@ -1,11 +1,11 @@
 package com.eauctionapp.seller.service;
 
 
-import com.eauctionapp.seller.dto.UserInfoCommandDTO;
+import com.eauctionapp.common.dto.UserInfoCommandDTO;
+import com.eauctionapp.common.event.BidEvent;
+import com.eauctionapp.common.event.EventType;
 import com.eauctionapp.seller.entity.BidInformation;
 import com.eauctionapp.seller.entity.UserInformation;
-import com.eauctionapp.seller.event.BidEvent;
-import com.eauctionapp.seller.event.EventType;
 import com.eauctionapp.seller.repository.BidInformationQueryRepository;
 import com.eauctionapp.seller.repository.UserInfoCommandRepository;
 import org.springframework.beans.factory.annotation.Autowired;

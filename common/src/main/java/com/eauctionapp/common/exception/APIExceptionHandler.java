@@ -1,4 +1,4 @@
-package com.eauctionapp.seller.exception;
+package com.eauctionapp.common.exception;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

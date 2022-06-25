@@ -1,7 +1,7 @@
 package com.eauctionapp.seller.service;
 
-import com.eauctionapp.seller.dto.UserInfoCommandDTO;
-import com.eauctionapp.seller.dto.UserType;
+import com.eauctionapp.common.dto.UserInfoCommandDTO;
+import com.eauctionapp.common.dto.UserType;
 import com.eauctionapp.seller.entity.UserInformation;
 import com.eauctionapp.seller.repository.UserInfoCommandRepository;
 import lombok.extern.slf4j.Slf4j;

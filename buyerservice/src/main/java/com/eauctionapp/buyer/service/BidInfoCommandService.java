@@ -1,8 +1,8 @@
 package com.eauctionapp.buyer.service;
 
-import com.eauctionapp.buyer.dto.BidInformationCommandDTO;
 import com.eauctionapp.buyer.model.BidInformation;
 import com.eauctionapp.buyer.model.Buyer;
+import com.eauctionapp.common.dto.BidInformationCommandDTO;
 
 public interface BidInfoCommandService {
 

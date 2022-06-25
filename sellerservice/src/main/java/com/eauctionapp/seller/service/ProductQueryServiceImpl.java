@@ -1,6 +1,6 @@
 package com.eauctionapp.seller.service;
 
-import com.eauctionapp.seller.dto.ProductBidQueryDTO;
+import com.eauctionapp.common.dto.ProductBidQueryDTO;
 import com.eauctionapp.seller.repository.ProductQueryRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

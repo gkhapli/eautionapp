@@ -1,10 +1,10 @@
 package com.eauctionapp.seller.controller;
 
-import com.eauctionapp.seller.dto.ProductCommandDTO;
+import com.eauctionapp.common.dto.ProductCommandDTO;
+import com.eauctionapp.common.event.EventType;
+import com.eauctionapp.common.exception.CustomException;
 import com.eauctionapp.seller.entity.Product;
 import com.eauctionapp.seller.entity.UserInformation;
-import com.eauctionapp.seller.event.EventType;
-import com.eauctionapp.seller.exception.CustomException;
 import com.eauctionapp.seller.service.BidInformationQueryService;
 import com.eauctionapp.seller.service.EventService;
 import com.eauctionapp.seller.service.ProductCommandService;

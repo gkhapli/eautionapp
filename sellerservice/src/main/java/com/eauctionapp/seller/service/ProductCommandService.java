@@ -1,6 +1,6 @@
 package com.eauctionapp.seller.service;
 
-import com.eauctionapp.seller.dto.ProductCommandDTO;
+import com.eauctionapp.common.dto.ProductCommandDTO;
 import com.eauctionapp.seller.entity.Product;
 import com.eauctionapp.seller.entity.UserInformation;
 

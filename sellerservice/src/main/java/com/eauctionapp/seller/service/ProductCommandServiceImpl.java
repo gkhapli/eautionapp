@@ -1,9 +1,9 @@
 package com.eauctionapp.seller.service;
 
-import com.eauctionapp.seller.dto.ProductCommandDTO;
+import com.eauctionapp.common.dto.ProductCommandDTO;
+import com.eauctionapp.common.exception.CustomException;
 import com.eauctionapp.seller.entity.Product;
 import com.eauctionapp.seller.entity.UserInformation;
-import com.eauctionapp.seller.exception.CustomException;
 import com.eauctionapp.seller.repository.ProductCommandRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

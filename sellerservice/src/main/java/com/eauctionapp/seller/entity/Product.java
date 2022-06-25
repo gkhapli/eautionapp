@@ -1,7 +1,7 @@
 package com.eauctionapp.seller.entity;
 
 
-import com.eauctionapp.seller.dto.ProductCategory;
+import com.eauctionapp.common.dto.ProductCategory;
 import lombok.*;
 
 import javax.persistence.*;

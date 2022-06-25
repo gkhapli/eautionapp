@@ -1,7 +1,7 @@
 package com.authenticationservice.controller;
 
-import com.authenticationservice.model.UserDto;
 import com.authenticationservice.model.AuthToken;
+import com.authenticationservice.model.UserDto;
 import com.authenticationservice.service.UserService;
 import com.authenticationservice.util.JwtTokenUtil;
 import org.springframework.beans.factory.annotation.Autowired;

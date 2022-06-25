@@ -1,4 +1,4 @@
-package com.eauctionapp.seller.exception;
+package com.eauctionapp.common.exception;
 
 import lombok.Data;
 import lombok.extern.slf4j.Slf4j;

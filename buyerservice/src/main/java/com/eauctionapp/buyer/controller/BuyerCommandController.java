@@ -1,12 +1,12 @@
 package com.eauctionapp.buyer.controller;
 
-import com.eauctionapp.buyer.dto.BidInformationCommandDTO;
-import com.eauctionapp.buyer.event.EventType;
 import com.eauctionapp.buyer.model.BidInformation;
 import com.eauctionapp.buyer.model.Buyer;
 import com.eauctionapp.buyer.service.BidInfoCommandService;
 import com.eauctionapp.buyer.service.BuyerCommandService;
 import com.eauctionapp.buyer.service.EventService;
+import com.eauctionapp.common.dto.BidInformationCommandDTO;
+import com.eauctionapp.common.event.EventType;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;

@@ -1,9 +1,9 @@
 package com.eauctionapp.buyer.service;
 
 
-import com.eauctionapp.buyer.dto.UserInfoCommandDTO;
 import com.eauctionapp.buyer.model.Buyer;
 import com.eauctionapp.buyer.repository.BuyerCommandRepository;
+import com.eauctionapp.common.dto.UserInfoCommandDTO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

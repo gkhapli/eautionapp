@@ -1,6 +1,6 @@
-package com.eauctionapp.seller.event;
+package com.eauctionapp.common.event;
 
-import com.eauctionapp.seller.dto.UserInfoCommandDTO;
+import com.eauctionapp.common.dto.UserInfoCommandDTO;
 import lombok.*;
 
 import java.io.Serializable;

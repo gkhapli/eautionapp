@@ -1,7 +1,7 @@
 package com.eauctionapp.seller.service;
 
+import com.eauctionapp.common.event.EventType;
 import com.eauctionapp.seller.entity.Product;
-import com.eauctionapp.seller.event.EventType;
 
 public interface EventService {
 

@@ -1,7 +1,7 @@
 package com.eauctionapp.buyer.config;
 
 
-import com.eauctionapp.buyer.event.BidEvent;
+import com.eauctionapp.common.event.BidEvent;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.kafka.clients.producer.ProducerConfig;
 import org.apache.kafka.common.serialization.StringSerializer;

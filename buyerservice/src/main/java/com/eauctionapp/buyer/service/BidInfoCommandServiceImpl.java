@@ -1,13 +1,13 @@
 package com.eauctionapp.buyer.service;
 
-import com.eauctionapp.buyer.dto.BidInformationCommandDTO;
-import com.eauctionapp.buyer.exception.CustomException;
 import com.eauctionapp.buyer.model.BidInformation;
 import com.eauctionapp.buyer.model.Buyer;
 import com.eauctionapp.buyer.model.Product;
 import com.eauctionapp.buyer.repository.BidInfoCommandRepository;
 import com.eauctionapp.buyer.repository.BuyerCommandRepository;
 import com.eauctionapp.buyer.repository.ProductQueryRepository;
+import com.eauctionapp.common.dto.BidInformationCommandDTO;
+import com.eauctionapp.common.exception.CustomException;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

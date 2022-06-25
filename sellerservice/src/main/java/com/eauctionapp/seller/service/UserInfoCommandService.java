@@ -1,6 +1,6 @@
 package com.eauctionapp.seller.service;
 
-import com.eauctionapp.seller.dto.UserInfoCommandDTO;
+import com.eauctionapp.common.dto.UserInfoCommandDTO;
 import com.eauctionapp.seller.entity.UserInformation;
 
 public interface UserInfoCommandService {

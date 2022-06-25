@@ -1,6 +1,6 @@
 package com.eauctionapp.seller.controller;
 
-import com.eauctionapp.seller.dto.ProductBidQueryDTO;
+import com.eauctionapp.common.dto.ProductBidQueryDTO;
 import com.eauctionapp.seller.service.ProductQueryService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;

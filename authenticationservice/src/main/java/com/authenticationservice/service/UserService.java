@@ -1,7 +1,7 @@
 package com.authenticationservice.service;
 
-import com.authenticationservice.model.UserDto;
 import com.authenticationservice.model.User;
+import com.authenticationservice.model.UserDto;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 

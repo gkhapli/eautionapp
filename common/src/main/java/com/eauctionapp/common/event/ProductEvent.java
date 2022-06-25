@@ -1,4 +1,4 @@
-package com.eauctionapp.seller.event;
+package com.eauctionapp.common.event;
 
 import lombok.*;
 

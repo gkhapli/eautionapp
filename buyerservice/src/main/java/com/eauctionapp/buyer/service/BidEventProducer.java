@@ -1,6 +1,6 @@
 package com.eauctionapp.buyer.service;
 
-import com.eauctionapp.buyer.event.BidEvent;
+import com.eauctionapp.common.event.BidEvent;
 import lombok.extern.slf4j.Slf4j;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

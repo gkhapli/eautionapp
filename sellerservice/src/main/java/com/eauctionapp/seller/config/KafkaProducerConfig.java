@@ -1,7 +1,7 @@
 package com.eauctionapp.seller.config;
 
 
-import com.eauctionapp.seller.event.ProductEvent;
+import com.eauctionapp.common.event.ProductEvent;
 import org.apache.kafka.clients.producer.ProducerConfig;
 import org.apache.kafka.common.serialization.StringSerializer;
 import org.springframework.beans.factory.annotation.Value;

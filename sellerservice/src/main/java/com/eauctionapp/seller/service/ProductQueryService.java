@@ -1,6 +1,6 @@
 package com.eauctionapp.seller.service;
 
-import com.eauctionapp.seller.dto.ProductBidQueryDTO;
+import com.eauctionapp.common.dto.ProductBidQueryDTO;
 
 import java.util.List;
 

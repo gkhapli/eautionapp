@@ -1,6 +1,6 @@
 package com.eauctionapp.seller.repository;
 
-import com.eauctionapp.seller.dto.ProductBidQueryDTO;
+import com.eauctionapp.common.dto.ProductBidQueryDTO;
 import com.eauctionapp.seller.entity.Product;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
@@ -9,7 +9,7 @@ import java.util.List;
 
 public interface ProductQueryRepository extends CrudRepository<Product,Long> {
 
-    @Query(value = "select new com.eauctionapp.seller.dto.ProductBidQueryDTO(a.id,a.productName,a.shortDescription,a.detailedDescription,\n" +
+    @Query(value = "select new com.eauctionapp.common.dto.ProductBidQueryDTO(a.id,a.productName,a.shortDescription,a.detailedDescription,\n" +
             "a.category,a.startingPrice,a.bidEndDate,b.bidAmount,c.firstName,c.lastName,c.address,\n" +
             "c.city,c.state,c.pin,c.phone,c.email) from Product a \n" +
             "JOIN BidInformation b ON a.id = b.productId\n" +

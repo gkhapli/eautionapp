@@ -1,10 +1,10 @@
 package com.eauctionapp.buyer.service;
 
 
-import com.eauctionapp.buyer.event.EventType;
-import com.eauctionapp.buyer.event.ProductEvent;
 import com.eauctionapp.buyer.model.Product;
 import com.eauctionapp.buyer.repository.ProductQueryRepository;
+import com.eauctionapp.common.event.EventType;
+import com.eauctionapp.common.event.ProductEvent;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.kafka.annotation.KafkaListener;
 import org.springframework.stereotype.Service;
