@@ -18,9 +18,4 @@ public class UserController {
         return userService.save(user);
     }
 
-    @GetMapping("/hello")
-    public String getHello(){
-        return "hello";
-    }
-    // Other methods
 }

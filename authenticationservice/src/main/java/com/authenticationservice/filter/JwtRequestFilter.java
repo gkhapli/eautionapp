@@ -1,4 +1,4 @@
-package com.authenticationservice.config;
+package com.authenticationservice.filter;
 
 import com.authenticationservice.service.UserServiceImpl;
 import com.authenticationservice.util.JwtTokenUtil;
