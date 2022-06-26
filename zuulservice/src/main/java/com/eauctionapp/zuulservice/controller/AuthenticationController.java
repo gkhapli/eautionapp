@@ -1,9 +1,9 @@
-package com.authenticationservice.controller;
+package com.eauctionapp.zuulservice.controller;
 
-import com.authenticationservice.model.AuthToken;
-import com.authenticationservice.model.UserDto;
-import com.authenticationservice.service.UserService;
-import com.authenticationservice.util.JwtTokenUtil;
+import com.eauctionapp.zuulservice.model.AuthToken;
+import com.eauctionapp.zuulservice.model.UserDto;
+import com.eauctionapp.zuulservice.service.UserService;
+import com.eauctionapp.zuulservice.util.JwtTokenUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.AuthenticationManager;
@@ -26,6 +26,7 @@ public class AuthenticationController {
     private JwtTokenUtil jwtTokenUtil;
     @Autowired
     private UserService userService;
+
     @RequestMapping(value = "/generate-token", method = RequestMethod.POST)
     public ResponseEntity<?> generateToken(@RequestBody UserDto userDto)
             throws AuthenticationException {
@@ -37,7 +38,7 @@ public class AuthenticationController {
         );
         SecurityContextHolder.getContext().setAuthentication(authentication);
         final UserDetails user = userService.loadUserByUsername(userDto.getUsername());
-        final String token = jwtTokenUtil.generateToken(user);
+        final String token = jwtTokenUtil.generateToken(user.getUsername());
         return ResponseEntity.ok(new AuthToken(token));
     }
 }

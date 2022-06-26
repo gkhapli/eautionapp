@@ -30,10 +30,6 @@ zuul:
     buyerService:
       path: /buyerService/**
       service-id: BUYERSERVICE
-    authenticationService:
-      path: /authenticationService/**
-      service-id: AUTHENTICATIONSERVICE
-      sensitiveHeaders: Cookie,Set-Cookie
      
      
       

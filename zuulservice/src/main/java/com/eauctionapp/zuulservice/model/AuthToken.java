@@ -1,4 +1,4 @@
-package com.authenticationservice.model;
+package com.eauctionapp.zuulservice.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

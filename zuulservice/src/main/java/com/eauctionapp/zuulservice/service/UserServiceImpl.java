@@ -1,8 +1,8 @@
-package com.authenticationservice.service;
+package com.eauctionapp.zuulservice.service;
 
-import com.authenticationservice.model.User;
-import com.authenticationservice.model.UserDto;
-import com.authenticationservice.repository.UserRepository;
+import com.eauctionapp.zuulservice.model.UserDto;
+import com.eauctionapp.zuulservice.entity.User;
+import com.eauctionapp.zuulservice.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;

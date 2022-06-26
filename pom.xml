@@ -15,11 +15,9 @@
     </properties>
 
     <modules>
-        <module>authenticationservice</module>
         <module>buyerservice</module>
         <module>sellerservice</module>
         <module>common</module>
-        <module>authenticationservice</module>
         <module>eurekadiscovery</module>
         <module>zuulservice</module>
     </modules>

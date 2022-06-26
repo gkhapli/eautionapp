@@ -1,4 +1,4 @@
-package com.authenticationservice.model;
+package com.eauctionapp.zuulservice.entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Data;
@@ -26,7 +26,7 @@ public class User {
     @JsonIgnore
     private String password;
 
-    public User(String username,String password){
+    public User(String username, String password){
         this.username = username;
         this.password = password;
     }
