@@ -34,6 +34,7 @@ public class ProductCommandController {
     @Autowired
     private BidInformationQueryService bidInformationQueryService;
 
+    @CrossOrigin
     @PostMapping(path = "/seller/add-product",
             consumes = MediaType.APPLICATION_JSON_VALUE,
             produces = MediaType.APPLICATION_JSON_VALUE)
@@ -49,6 +50,7 @@ public class ProductCommandController {
         return product;
     }
 
+    @CrossOrigin
     @DeleteMapping(path = "/seller/delete/{productId}")
     public ResponseEntity deleteProduct(@PathVariable Long productId) {
         log.info("Delete product by Id {}",productId);

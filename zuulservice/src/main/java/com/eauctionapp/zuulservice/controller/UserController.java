@@ -13,6 +13,7 @@ public class UserController {
     @Autowired
     private UserService userService;
 
+    @CrossOrigin
     @PostMapping("/signup")
     public User saveUser(@RequestBody UserDto user){
         return userService.save(user);

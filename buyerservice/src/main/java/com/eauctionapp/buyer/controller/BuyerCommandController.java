@@ -25,6 +25,7 @@ public class BuyerCommandController {
     @Autowired
     private EventService eventService;
 
+    @CrossOrigin
     @PostMapping(path = "/buyer/place-bid",
             consumes = MediaType.APPLICATION_JSON_VALUE,
             produces = MediaType.APPLICATION_JSON_VALUE)
@@ -37,6 +38,7 @@ public class BuyerCommandController {
         eventService.sendBidInfoEvent(buyer,bidInformation,EventType.BIDINFOCREATED);
     }
 
+    @CrossOrigin
     @PutMapping (path = "/buyer/update-bid/{productId}/{buyerEmailld}/{newBidAmount}")
     public void updateBid(@PathVariable String productId,
                           @PathVariable String buyerEmailld,
