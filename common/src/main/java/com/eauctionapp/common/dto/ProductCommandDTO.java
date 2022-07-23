@@ -2,6 +2,7 @@ package com.eauctionapp.common.dto;
 
 import lombok.*;
 
+import javax.validation.Valid;
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.Size;
 import java.io.Serializable;
@@ -23,5 +24,6 @@ public final class ProductCommandDTO implements Serializable {
     private ProductCategory category;
     private Long startingPrice;
     private LocalDate bidEndDate;
+    @Valid
     private UserInfoCommandDTO seller;
 }

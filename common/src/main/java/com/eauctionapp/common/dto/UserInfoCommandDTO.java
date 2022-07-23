@@ -2,9 +2,7 @@ package com.eauctionapp.common.dto;
 
 import lombok.*;
 
-import javax.validation.constraints.Email;
-import javax.validation.constraints.NotEmpty;
-import javax.validation.constraints.Size;
+import javax.validation.constraints.*;
 import java.io.Serializable;
 
 @Builder
@@ -27,9 +25,9 @@ public final class UserInfoCommandDTO implements Serializable {
     private String pin;
     @NotEmpty
     @Size(min = 10,max = 10,message = "Mobile Number should have min 10 max 10 characters")
-    private Long phone;
-    @NotEmpty
-    @Email(message = "Please enter a valid email")
+    private String phone;
+    @NotBlank
+    @Email(message = "Please enter a valid email",regexp = "^[\\w-\\.]+@([\\w-]+\\.)+[\\w]{2,4}$")
     private String email;
     private UserType userType;
 }

@@ -21,6 +21,6 @@ public final class Buyer {
     private String city;
     private String state;
     private String pin;
-    private Long phone;
+    private String phone;
     private String email;
 }

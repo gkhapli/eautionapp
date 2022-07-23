@@ -25,7 +25,7 @@ public final class ProductBidQueryDTO {
     private String buyerCity;
     private String buyerState;
     private String buyerPin;
-    private Long buyerPhone;
+    private String buyerPhone;
     private String buyerEmail;
 
 }

@@ -24,7 +24,7 @@ public class UserInformation {
     private String city;
     private String state;
     private String pin;
-    private Long phone;
+    private String phone;
     private String email;
     @Enumerated(EnumType.STRING)
     private UserType userType;
