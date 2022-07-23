@@ -1,6 +1,5 @@
 package com.eauctionapp.seller.repository;
 
-import com.eauctionapp.common.dto.ProductBidQueryDTO;
 import com.eauctionapp.common.dto.ProductQueryDTO;
 import com.eauctionapp.seller.entity.Product;
 import org.springframework.data.jpa.repository.Query;

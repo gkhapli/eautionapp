@@ -1,7 +1,7 @@
 package com.eauctionapp.zuulservice.service;
 
-import com.eauctionapp.zuulservice.model.UserDto;
 import com.eauctionapp.zuulservice.entity.User;
+import com.eauctionapp.zuulservice.model.UserDto;
 import com.eauctionapp.zuulservice.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;

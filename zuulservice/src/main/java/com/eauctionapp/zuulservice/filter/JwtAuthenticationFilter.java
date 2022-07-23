@@ -1,6 +1,5 @@
 package com.eauctionapp.zuulservice.filter;
 
-import com.auth0.jwt.exceptions.JWTVerificationException;
 import com.eauctionapp.zuulservice.service.UserServiceImpl;
 import com.eauctionapp.zuulservice.util.JwtTokenUtil;
 import org.springframework.beans.factory.annotation.Autowired;

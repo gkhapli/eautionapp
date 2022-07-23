@@ -12,6 +12,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
 
+import javax.validation.Valid;
+
 @RestController
 @Slf4j
 public class BuyerCommandController {
@@ -29,7 +31,7 @@ public class BuyerCommandController {
     @PostMapping(path = "/buyer/place-bid",
             consumes = MediaType.APPLICATION_JSON_VALUE,
             produces = MediaType.APPLICATION_JSON_VALUE)
-    public void postBid(@RequestBody BidInformationCommandDTO bidInformationCommandDTO) {
+    public void postBid(@RequestBody @Valid BidInformationCommandDTO bidInformationCommandDTO) {
         //done Check if  productId must be available for auction ProductStore table
         //done If the bid is placed after the bid end date throw e ProductStore table
         //TODO If a bid is already placed on the product throw e

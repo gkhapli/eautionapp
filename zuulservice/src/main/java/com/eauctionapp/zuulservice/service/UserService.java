@@ -1,7 +1,7 @@
 package com.eauctionapp.zuulservice.service;
 
-import com.eauctionapp.zuulservice.model.UserDto;
 import com.eauctionapp.zuulservice.entity.User;
+import com.eauctionapp.zuulservice.model.UserDto;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 
