@@ -8,11 +8,13 @@ import com.eauctionapp.seller.entity.BidInformation;
 import com.eauctionapp.seller.entity.UserInformation;
 import com.eauctionapp.seller.repository.BidInformationQueryRepository;
 import com.eauctionapp.seller.repository.UserInfoCommandRepository;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.kafka.annotation.KafkaListener;
 import org.springframework.stereotype.Service;
 
 @Service
+@Slf4j
 public final class ConsumerService {
 
     @Autowired
@@ -29,7 +31,7 @@ public final class ConsumerService {
 
     @KafkaListener(topics = "bid-topic", containerFactory = "kafkaListenerContainerFactory")
     public void consume(BidEvent bidEvent) {
-        System.out.println("Message received "+bidEvent);
+        log.debug("Message received {}",bidEvent);
         if(EventType.BIDINFOCREATED.equals(bidEvent.getEventType())){
             UserInfoCommandDTO buyer = bidEvent.getBuyer();
             UserInformation userInformation = UserInformation.builder()

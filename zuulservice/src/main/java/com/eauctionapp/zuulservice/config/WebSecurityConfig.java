@@ -9,10 +9,7 @@ import org.springframework.security.config.annotation.web.configuration.EnableWe
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
-import org.springframework.web.cors.CorsConfiguration;
-import org.springframework.web.cors.CorsConfigurationSource;
 import org.springframework.web.cors.CorsUtils;
-import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
 
 @EnableWebSecurity
 public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
@@ -27,8 +24,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     }
 
     @Bean
-    public JwtAuthenticationFilter authenticationTokenFilterBean() throws
-            Exception {
+    public JwtAuthenticationFilter authenticationTokenFilterBean() {
         return new JwtAuthenticationFilter();
     }
 
@@ -36,10 +32,10 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     protected void configure(HttpSecurity httpSecurity) throws Exception {
 
         httpSecurity
-                .csrf().disable()
+                //.csrf().disable()
                 .logout().disable()
                 .formLogin().disable()
-                .cors().disable()
+                //.cors().disable()
                 .sessionManagement()
                 .sessionCreationPolicy(SessionCreationPolicy.STATELESS)
                 //.and()
@@ -63,16 +59,5 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 //.antMatchers("/backend/user").hasRole("USER")
                 //.antMatchers("/backend/guest").permitAll();
         ;
-    }
-
-    private CorsConfigurationSource configurationSource() {
-        UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
-        CorsConfiguration config = new CorsConfiguration();
-        config.addAllowedOrigin("*");
-        config.setAllowCredentials(true);
-        config.addAllowedHeader("Content-Type");
-        config.addAllowedMethod("*");
-        source.registerCorsConfiguration("/**", config);
-        return source;
     }
 }

@@ -9,6 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDate;
+import java.util.Optional;
 
 @Service
 public class ProductCommandServiceImpl implements ProductCommandService {
@@ -42,6 +43,11 @@ public class ProductCommandServiceImpl implements ProductCommandService {
 
     @Override
     public Product findProductById(Long productId) {
-        return productCommandRepository.findById(productId).get();
+        Optional<Product> optionalProduct = productCommandRepository.findById(productId);
+        if(optionalProduct.isPresent()){
+            return optionalProduct.get();
+        }else{
+            throw new CustomException(CustomException.ErrorCode.NOPRODUCTIDPRESENT);
+        }
     }
 }

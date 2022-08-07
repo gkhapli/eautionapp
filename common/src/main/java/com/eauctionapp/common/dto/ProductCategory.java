@@ -4,8 +4,8 @@ import java.io.Serializable;
 
 public enum ProductCategory implements Serializable {
 
-    Painting,
-    Sculptor,
-    Ornament;
+    PAINTING,
+    SCULPTOR,
+    ORNAMENT;
 
 }

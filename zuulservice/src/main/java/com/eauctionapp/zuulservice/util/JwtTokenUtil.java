@@ -18,7 +18,7 @@ public class JwtTokenUtil implements Serializable {
     @Value("${jwt.secret}")
     private String secret;
 
-    public static final long JWT_TOKEN_VALIDITY = 5 * 60 * 60;
+    public static final long JWT_TOKEN_VALIDITY = 5L * 60L * 60L;
 
     public String generateToken(String email) throws IllegalArgumentException, JWTCreationException {
         return JWT.create()

@@ -25,8 +25,8 @@ public class AuthenticationController {
     private UserService userService;
 
     @CrossOrigin
-    @RequestMapping(value = "/generate-token", method = RequestMethod.POST)
-    public ResponseEntity<?> generateToken(@RequestBody UserDto userDto)
+    @PostMapping(value = "/generate-token")
+    public ResponseEntity<AuthToken> generateToken(@RequestBody UserDto userDto)
             throws AuthenticationException {
         final Authentication authentication = authenticationManager.authenticate(
                 new UsernamePasswordAuthenticationToken(

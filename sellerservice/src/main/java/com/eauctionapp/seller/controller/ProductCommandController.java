@@ -53,13 +53,13 @@ public class ProductCommandController {
 
     @CrossOrigin
     @DeleteMapping(path = "/seller/delete/{productId}")
-    public ResponseEntity deleteProduct(@PathVariable Long productId) {
+    public ResponseEntity<Void> deleteProduct(@PathVariable Long productId) {
         log.info("Delete product by Id {}",productId);
         Product product = productCommandService.findProductById(productId);
         log.debug("Found product by Id {}",productId);
         if(product == null){
             log.error("No Product found with the provided productId");
-            return new ResponseEntity(HttpStatus.NO_CONTENT);
+            return new ResponseEntity<>(HttpStatus.NO_CONTENT);
         }
         if(product.getBidEndDate().isBefore(LocalDate.now())){
             log.error("The provided bidenddate should be future date");
@@ -79,6 +79,6 @@ public class ProductCommandController {
         eventService.sendProductEvent(product,EventType.PRODUCTDELETED);
         log.debug("Sent ProductDeleted Event to Kafka");
 
-        return new ResponseEntity(HttpStatus.OK);
+        return new ResponseEntity<>(HttpStatus.OK);
     }
 }
