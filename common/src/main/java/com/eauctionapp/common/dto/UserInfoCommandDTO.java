@@ -30,7 +30,7 @@ public final class UserInfoCommandDTO implements Serializable {
     @Size(min = 10,max = 10,message = "Mobile Number should have min 10 max 10 characters")
     private String phone;
     @NotBlank
-    @Email(message = "Please enter a valid email",regexp = "^[\\w-\\.]+@([\\w-]+\\.)+[\\w]{2,4}$")
+    @Email(message = "Please enter a valid email",regexp = "^[\\w-\\.]+@([\\w-+\\.])+[\\w]{2,4}$")
     private String email;
     private UserType userType;
 }
